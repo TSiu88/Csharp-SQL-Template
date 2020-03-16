@@ -1,6 +1,6 @@
-# _Assignment Name_
+# _[Assignment Name](https://github.com/TSiu88/#)_
 
-#### _Brief desc of Project, 02.6.2020_
+#### _Brief desc of Project, 03.16.2020_
 <!-- ##### _Version 1.1 Updated 01.11.2020_ -->
 
 #### By _**Tiffany Siu**_
@@ -21,11 +21,12 @@
     - [Other Technologies Used](#other-technologies-used)
 3. [Notable Features](#notable-features)
 4. [Specifications](#specifications)
-5. [Screenshots](#screenshots)
-6. [Test Case Example](#test-case-example)
-7. [Known Bugs](#known-bugs)
-8. [Support and Contact Details](#support-and-contact-details)
-9. [License](#license)
+5. [User Stories](#user-stories)
+6. [Screenshots](#screenshots)
+7. [Test Case Example](#test-case-example)
+8. [Known Bugs](#known-bugs)
+9. [Support and Contact Details](#support-and-contact-details)
+10. [License](#license)
 ---
 ## Description
 
@@ -74,6 +75,7 @@ _README under construction_
 * _C#_
 * _MSTest_
 * _Razor_
+* _MySQL Workbench_
 * _Markdown_ -->
 
 <!-- #### Javascript
@@ -133,7 +135,7 @@ _README under construction_
 <!-- * As a scheduler, I want to be able to organize nurses vacation schedules without much paperwork so that I can be more efficient.
 * As a scheduler, I want to see a list of requests with the overlapping dates and the nurses that sent in the requests organized by priority so I can see which staff member should have priority in getting the request approved. -->
 
-<!-- * Give stories for people who will use this project and what they'd want it to do.  Can include customers/end users, programmers that maintain code, etc. -->
+<!-- * Give stories for people who will use this project and what they'd want it to do.  Can include customers/end users, programmers that maintain code, etc. Use "As a <job title/type of user/etc>, I want to...<what want program to achieve>... so that I can...<reason>.-->
 
 
 ## Screenshots
@@ -163,6 +165,8 @@ _There are currently no known bugs in this program_
 ## Support and contact details
 
 _If there are any question or concerns please contact me at my [email](mailto:tsiu88@gmail.com). Thank you._
+
+<!-- _If there are any question or concerns please contact us at our emails: [Tiffany Siu](mailto:tsiu88@gmail.com) and [Name](mailto:#). Thank you._ -->
 
 ### License
 
