@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+<h1>Input for Form Here</h1>
+<form action="/categories/@Model.Id/items" method="post">
+  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
+  <div class="form-group">
+    <label for="property">Item Property</label>
+    <input id="property" name="property" type="text" required>
+  </div>
+  <button type="submit">Add</button>
+</form>
+<div class="footer">
+  <a href="/">Return to Home</a>
+  <a href="/items">View items</a>
+</div>

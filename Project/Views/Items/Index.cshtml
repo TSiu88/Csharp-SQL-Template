@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+@using ProjectName.Models
+<h1>Page Title</h1>
+@{foreach (Item item in Item.GetAll())
+{
+  <h4>@item.Property</h4>
+}}
+<div class="footer">
+  <a href="/">Return To Home</a>
+</div>
