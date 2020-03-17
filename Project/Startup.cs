@@ -1,9 +1,10 @@
-using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using ProjectName.Models;
 
 namespace ProjectName
 {
@@ -13,19 +14,23 @@ namespace ProjectName
     {
       var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
-          .AddEnvironmentVariables();
+          .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
 
-    public IConfigurationRoot Configuration { get; }
+    public IConfigurationRoot Configuration { get; set; }
 
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
+      services.AddEntityFrameworkMySql()
+        .AddDbContext<ProjectNameContext>(options => options
+        .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
 
     public void Configure(IApplicationBuilder app)
     {
+      app.UseStaticFiles();
       app.UseDeveloperExceptionPage();
       app.UseMvc(routes =>
       {
@@ -33,16 +38,11 @@ namespace ProjectName
           name: "default",
           template: "{controller=Home}/{action=Index}/{id?}");
       });
-      app.UseStaticFiles();
+      
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("Hello World!");
+        await context.Response.WriteAsync("Something went wrong!");
       });
     }
-  }
-
-  public static class DBConfiguration
-  {
-    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=to_do_list;";
   }
 }

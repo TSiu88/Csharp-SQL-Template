@@ -76,6 +76,7 @@ _README under construction_
 * _MSTest_
 * _Razor_
 * _MySQL Workbench_
+* _Entity Framework_
 * _Markdown_ -->
 
 <!-- #### Javascript
@@ -151,11 +152,15 @@ _Here is a preview of what the output looks like:_
 <!-- _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_ -->
 
 ## Test Case Example
-<!-- _Tests are done through Jest and are run from the command line prompt with `npm test`._
-_Some example tests:_
-![Snippet of an example test](img/test1.png)
+<!-- _Tests are done through MSTest and are run from the command line prompt with `dotnet test` from the `ProjectName.Tests` directory. -->
+<!-- _Tests are done through Jest and are run from the command line prompt with `npm test`._ -->
 
-![Snippet of an example result](img/test2.png) -->
+<!-- _Some example tests:_
+
+![Snippet of an example test](img/tester1.png)
+
+![Snippet of an example result](img/tester2.png) -->
+
 <!-- _describe and show how to run tests with `code` examples}_ -->
 
 ## Known Bugs
