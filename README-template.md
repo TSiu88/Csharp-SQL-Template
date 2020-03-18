@@ -73,6 +73,8 @@ _README under construction_
 ## Other Technologies Used
 <!-- #### C#
 * _C#_
+* _HTML_
+* _CSS_
 * _MSTest_
 * _Razor_
 * _MySQL Workbench_
