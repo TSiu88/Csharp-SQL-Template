@@ -35,10 +35,17 @@ _README under construction_
 
 ## Setup/Installation Requirements
 
+<!-- _This program requires .NET Core SDK to run. [Here is a free tutorial](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-c-and-net) for installing .NET on Mac or Windows 10 from the [official website](https://dotnet.microsoft.com/download/dotnet-core/)._ 
+
+_This program also makes use of SQL databases. We recommend using MySQL Workbench to build your databases. [Here is a free tutorial](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) for installing MySQL WorkBench and MySQL Community Server on Mac (using links [Mac1](https://dev.mysql.com/downloads/file/?id=484914) and [Mac2](https://dev.mysql.com/downloads/file/?id=484391)) or [Windows 10](https://dev.mysql.com/downloads/file/?id=484919)._ -->
+
 ### Requirements to Run
 <!-- #### C#
 * _.NET Core_
 * _ASP.NET Core MVC_
+* _MySQL Workbench_
+* _MySQL Community Server_
+* _Entity Framework_
 * _Command Prompt_
 * _Web Browser_ -->
 
@@ -50,6 +57,23 @@ _README under construction_
 * _API KEY_ -->
 
 ### Instructions
+
+<!-- *This application may be viewed by:*
+
+1. Download and install .NET Core from the [official website](https://dotnet.microsoft.com/download/dotnet-core/)
+2. Download and install MySQL Workbench and Community Server for Mac or Windows by following the instructions [here](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql).
+3. Click clone the [repository](https://github.com/TSiu88/HairSalon.git) from my [GitHub page](https://github.com/TSiu88) to copy the repository link
+4. Use a command line interface to type `git clone (repository-link-here)` to copy the project into the current folder and then move into the repository's directory that was just created with `cd (project-name-here)`
+5. Start up a local server by opening MySQL Workbench and adding a `MySQL Connections` using the default IP address and Port (IP 127.0.0.1, Port 3306), username (root), and password from setup.
+6. Construct the database by entering in the following lines under the `Query 1` section and then clicking execute:
+  >
+    CREATE DATABASE tiffany_siu;
+    USE tiffany_siu;
+    CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR(255));
+    CREATE TABLE clients (id serial PRIMARY KEY, description VARCHAR(255));
+7. Run `dotnet restore` and `dotnet build` in command line interface of the repository's main project directory
+8. Run `dotnet run` to start up the program in the command line interface
+9. Type the URL listed under "Now listening on:" into a web browser to run -->
 
 <!-- *This page may be viewed by:*
 
@@ -77,8 +101,6 @@ _README under construction_
 * _CSS_
 * _MSTest_
 * _Razor_
-* _MySQL Workbench_
-* _Entity Framework_
 * _Markdown_ -->
 
 <!-- #### Javascript

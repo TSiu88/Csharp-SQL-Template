@@ -16,6 +16,10 @@
   @foreach (Category category in Model)
   {
     <li>@Html.ActionLink($"{category.Name}", "Details", new { id = category.CategoryId })</li>
+    <p>
+      @Html.ActionLink("Edit", "Edit", new { id = category.CategoryId}) | 
+      @Html.ActionLink("Delete", "Delete", new { id = category.CategoryId})
+    </p>
   }
 </ul>
 
