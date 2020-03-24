@@ -6,6 +6,7 @@ namespace ProjectName.Models
   {
     public virtual DbSet<Category> Categories { get; set; }
     public DbSet<Item> Items { get; set; }
+    public DbSet<CategoryItem> CategoryItem { get; set; }
 
     public ProjectNameContext(DbContextOptions options) : base(options) { }
   }

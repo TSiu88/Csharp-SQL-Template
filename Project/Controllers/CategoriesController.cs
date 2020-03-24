@@ -17,8 +17,7 @@ namespace ProjectName.Controllers
 
     public ActionResult Index()
     {
-      List<Category> model = _db.Categories.ToList();
-      return View(model);
+      return View(_db.Categories.ToList());
     }
 
     public ActionResult Create()
@@ -36,8 +35,10 @@ namespace ProjectName.Controllers
 
     public ActionResult Details(int id)
     {
-      Category thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
-      thisCategory.Items = _db.Items.Where(item => item.CategoryId == id).ToList();
+      var thisCategory = _db.Categories
+        .Include(category => category.Items)
+        .ThenInclude(join => join.Item)
+        .FirstOrDefault(category => category.CategoryId == id);
       return View(thisCategory);
     }
 
