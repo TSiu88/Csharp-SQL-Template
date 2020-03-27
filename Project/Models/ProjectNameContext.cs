@@ -1,8 +1,9 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ProjectName.Models
 {
-  public class ProjectNameContext : DbContext
+  public class ProjectNameContext : IdentityDbContext<ApplicationUser>
   {
     public virtual DbSet<Category> Categories { get; set; }
     public DbSet<Item> Items { get; set; }
